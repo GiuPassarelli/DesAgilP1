@@ -21,19 +21,15 @@ public class Controller implements ActionListener, KeyListener {
 	@Override
 	public void keyPressed(KeyEvent event) {
 		if(event.getKeyCode() == KeyEvent.VK_UP){
-			System.out.println("Pressionei o up");
 			model.getHumanPlayer().move(-1, 0);
 		}
 		if(event.getKeyCode() == KeyEvent.VK_DOWN){
-			System.out.println("Pressionei o up");
 			model.getHumanPlayer().move(1, 0);
 		}
 		if(event.getKeyCode() == KeyEvent.VK_RIGHT){
-			System.out.println("Pressionei o up");
 			model.getHumanPlayer().move(0, 1);
 		}
 		if(event.getKeyCode() == KeyEvent.VK_LEFT){
-			System.out.println("Pressionei o up");
 			model.getHumanPlayer().move(0, -1);
 		}
 		
